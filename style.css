@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* common */
+
+*{
+  margin: 0;
+}
+
+.container{
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+h2{
+  font-size: 3.5vw;
+  color: green;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+h3{
+  font-size: 24px;
+}
+
+
+/* header */
+
+header{
+  padding: 32px 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 16px;
+}
+h1 img{
+  width: 100%;
+  min-width: 50px;
+  height: auto
+}
+
+header a:hover{
+  opacity: .7;
+}
+
+.h2 p{
+  font-size: 2.5vw;
+}
+header a p{
+  font-size: 1vw;
+  text-align: center;
+}
+.h2{
+  flex: none;
+}
+.access{
+  margin-left: auto;
+}
+
+/* hero */
+.hero{
+  height: 600px;
+  text-align: center;
+  padding: 64px 0;
+  background: url(byouin.png) no-repeat center bottom;
+  color: white;
+}
+
+.hero p{
+  font-size: 16px;
+  margin: 16px 0 0;
+  color: white;
+ }
+
+ .hero p+p{
+  margin: 216px 0 0;
+ }
+
+ .hero h3{
+  margin: 56px 0 0;
+ }
+
+ /* shoshin */
+ .shoshin{
+  padding: 32px 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+ }
+
+ .shoshin h3{
+color: rgb(32, 196, 32); 
+}
+
+.reserve{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.shoshin p+p{
+  margin: 8px 0 0;
+}
+.shoshin a{
+  font-size: 24px;
+  line-height: 2.5;
+  color: red;
+  font-weight: bold;
+}
+
+.shoshin img{
+  margin-bottom: 8px;
+}
+
+/* jikan */
+.jikan{
+  background-color: rgba(0, 128, 0, 0.447);
+  margin: 32px auto;
+  /* border: green solid 3px; */
+  border-radius: 16px;
+  padding: 32px;
+  
+}
+
+.jikan div{
+  text-align: center;
+}
+.jikan table{
+  margin: 8px auto;
+  border-collapse: collapse;
+}
+
+.jikan th{
+  padding: 8px;
+  border: 3px solid #444;
+}
+
+.jikan td{
+  padding: 8px 16px;
+  border: 3px solid #444;
+}
+
+.jikan h3{
+  color:white;
+}
+
+.jikan h4{
+  font-size: 20px;
+  margin: 32px 0 0 ;
+}
+
+.jikan h4 + p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.jikan ul{
+  margin: 32px 0 0;
+}
+.jikan li{
+  margin: 8px 0 0 ;
+}
+/* menu */
+
+.tabu{
+  background-color: orange;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+.menu{
+  display: flex;
+  text-align: center;
+}
+
+.menu a{
+  font-size: 16px;
+  color: white;
+   line-height: 64px;
+   border: 1px white solid;
+   flex: 1;
+}
+
+.menu a:hover{
+  opacity: .7;
+}
+.kuruma{
+ padding: 16px 32px;
+ }
+
+ .kuruma p{
+  font-size: 16px;
+ }
+  
+ footer{
+  text-align: center;
+  background-color: #555;
+  color: white;
+  padding: 16px 0 200px;
+ }
