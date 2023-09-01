@@ -5,6 +5,9 @@
 *{
   margin: 0;
 }
+body{
+  max-width: 100%;
+}
 
 .container{
   width: calc(100% - 32px);
@@ -13,7 +16,7 @@
 }
 
 h2{
-  font-size: 3.5vw;
+  font-size: 14px;
   color: green;
 }
 
@@ -34,11 +37,12 @@ h3{
 /* header */
 
 header{
+  box-sizing: border-box;
   padding: 32px 0;
   display: flex;
   justify-content:space-between;
   align-items: center;
-  gap: 16px;
+  gap: 4px;
 }
 h1 img{
   width: 100%;
@@ -51,12 +55,19 @@ header a:hover{
 }
 
 .h2 p{
-  font-size: 2.5vw;
+  font-size: 10px;
 }
 header a p{
-  font-size: 1vw;
+  font-size: 8px;
   text-align: center;
 }
+
+header img{
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+}
+
 .h2{
   flex: none;
 }
@@ -64,26 +75,68 @@ header a p{
   margin-left: auto;
 }
 
+/* popup */
+
+.popup{
+  box-sizing: border-box;
+  padding: 32px 0 24px;
+  width:40px;
+  height:40px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 32px;
+  right: 20px;
+  border-radius: 16px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.popup p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(32, 196, 32);
+}
+
+
+.popup:hover{
+  width:300px;
+  height:400px;
+  background-color: white;
+  display: block;
+  margin-top: 16px;
+}
+
+
 /* hero */
 .hero{
-  height: 600px;
+  height: 450px;
   text-align: center;
-  padding: 64px 0;
-  background: url(byouin.png) no-repeat center bottom;
+  padding: 40px 0;
+  background: url(byouin.png) no-repeat center top;
   color: white;
 }
 
 .hero p{
   font-size: 16px;
-  margin: 16px 0 0;
+  margin: 0;
+  padding: 8px 0;
   color: white;
  }
 
- .hero p+p{
-  margin: 216px 0 0;
+ .hero .container div{
+  border-radius: 4px;
+  background-color: #a8ada1cf;
+ }
+
+ .hero div+p{
+  border-radius: 4px;
+  background-color: #a8ada1cf;
+  margin: 150px 0 0;
  }
 
  .hero h3{
+  padding: 8px 0 0;
   margin: 56px 0 0;
  }
 
@@ -132,13 +185,17 @@ color: rgb(32, 196, 32);
   
 }
 
+
 .jikan div{
   text-align: center;
 }
+
 .jikan table{
   margin: 8px auto;
   border-collapse: collapse;
+  
 }
+
 
 .jikan th{
   padding: 8px;
@@ -146,7 +203,7 @@ color: rgb(32, 196, 32);
 }
 
 .jikan td{
-  padding: 8px 16px;
+  padding: 8px 12px;
   border: 3px solid #444;
 }
 
@@ -170,6 +227,37 @@ color: rgb(32, 196, 32);
 .jikan li{
   margin: 8px 0 0 ;
 }
+
+/* map */
+.map{
+  margin-bottom: 32px;
+  text-align: center;
+}
+.map h3{
+  text-align: center;
+  color: rgb(32, 196, 32); 
+  }
+
+  .map img{
+    margin-top: 16px;
+  }
+
+  .map h4{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 20px;
+  }
+
+.jusyo{
+  margin-top: 16px;
+}
+
+.map img + p{
+  margin-top: 8px;
+font-size: 14px;
+color: green;
+}
+
 /* menu */
 
 .tabu{
@@ -179,12 +267,14 @@ color: rgb(32, 196, 32);
   bottom: 0;
 }
 .menu{
+  width: 100%;
   display: flex;
   text-align: center;
 }
 
 .menu a{
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
   color: white;
    line-height: 64px;
    border: 1px white solid;
@@ -199,7 +289,7 @@ color: rgb(32, 196, 32);
  }
 
  .kuruma p{
-  font-size: 16px;
+  font-size: 12px;
  }
   
  footer{
