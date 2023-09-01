@@ -32,7 +32,12 @@ img{
 h3{
   font-size: 24px;
 }
-
+@media(min-width: 600px) {
+  .container {
+    width: calc(100% - 128px);
+    max-width: 1000px;
+  }
+}
 
 /* header */
 
@@ -75,37 +80,31 @@ header img{
   margin-left: auto;
 }
 
-/* popup */
+@media(min-width: 600px) {
+  header h2 {
+    font-size: 2.5vw;
+  }
 
-.popup{
-  box-sizing: border-box;
-  padding: 32px 0 24px;
-  width:40px;
-  height:40px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  top: 32px;
-  right: 20px;
-  border-radius: 16px;
-  text-align: center;
-  overflow: hidden;
+  .h2 p {
+    font-size: 16px;
+  }
+
+  h1 img {
+    min-width: 90px;
+    max-width: 100px;
+  }
+
+  header div img {
+    min-width: 50px;
+    max-width: 80px;
+  }
+
+  header a p {
+    font-size: 16px;
+  }
 }
 
-.popup p{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(32, 196, 32);
-}
 
-
-.popup:hover{
-  width:300px;
-  height:400px;
-  background-color: white;
-  display: block;
-  margin-top: 16px;
-}
 
 /* inquiry */
 
@@ -143,9 +142,40 @@ header img{
   padding: 4px 0;
 }
 
+@media(min-width: 600px){
+  .inquiry{
+    margin-top: 64px;
+    margin-bottom: 40px;
+  }
+  
+  .kagami {
+    max-width: 500px;
+    margin: 16px auto;
+  }
+  .kagami h3{
+    font-size: 24px;
+  }
+  .kagami p{
+    font-size: 20px;
+  }
+
+  .denwa{
+    font-size: 32px;
+    padding-top: 32px;
+  }
+
+  .jusyo{
+    width: 450px;
+    font-size: 24px;
+    margin-top: 32px;
+  }
+ 
+}
+
 /* menu */
 
 .tabu{
+  width: 100%;
   background-color: orange;
   color: white;
   position: fixed;
@@ -177,9 +207,45 @@ header img{
   font-size: 12px;
  }
   
- footer{
-  text-align: center;
-  background-color: #555;
-  color: white;
-  padding: 16px 0 200px;
+ @media(min-width: 600px){
+  .tabu{
+   background-color: #555;
+   position: static;
+   margin: 0 auto;
+  }
+
+  .menu{
+   justify-content: center;
+  }
+
+   .menu a{
+     border-bottom: none;
+     width: 200px;
+     flex: initial;
+     font-size: 22px;
+   }
+
+   .kuruma p{
+     text-align: center;
+     font-size: 20px;
+   }
+
+   .kuruma h4{
+     margin-top: 16px;
+     text-align: center;
+     font-size: 24px;
  }
+ }
+
+ footer {
+   text-align: center;
+   background-color: #555;
+   color: white;
+   padding: 16px 0 200px;
+ }
+
+ @media(min-width: 600px){
+   footer{
+     padding-bottom: 64px;
+ }
+}

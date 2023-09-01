@@ -2,114 +2,116 @@
 
 /* common */
 
-*{
+* {
   margin: 0;
 }
-body{
+
+body {
   max-width: 100%;
 }
 
-.container{
+.container {
   width: calc(100% - 32px);
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-h2{
+h2 {
   font-size: 14px;
   color: green;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-img{
+img {
   vertical-align: bottom;
 }
 
-h3{
+h3 {
   font-size: 24px;
 }
 
+@media(min-width: 600px) {
+  .container {
+    width: calc(100% - 128px);
+    max-width: 1000px;
+  }
+}
 
 /* header */
 
-header{
+header {
   box-sizing: border-box;
   padding: 32px 0;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   gap: 4px;
 }
-h1 img{
+
+h1 img {
   width: 100%;
   min-width: 50px;
   height: auto
 }
 
-header a:hover{
+header a:hover {
   opacity: .7;
 }
 
-.h2 p{
+.h2 p {
   font-size: 10px;
 }
-header a p{
+
+header a p {
   font-size: 8px;
   text-align: center;
 }
 
-header img{
+header img {
   width: 100%;
   height: auto;
   max-width: 50px;
 }
 
-.h2{
+.h2 {
   flex: none;
 }
-.access{
+
+.access {
   margin-left: auto;
 }
 
-/* popup */
+@media(min-width: 600px) {
+  header h2 {
+    font-size: 2.5vw;
+  }
 
-.popup{
-  box-sizing: border-box;
-  padding: 32px 0 24px;
-  width:40px;
-  height:40px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  top: 32px;
-  right: 20px;
-  border-radius: 16px;
-  text-align: center;
-  overflow: hidden;
-}
+  .h2 p {
+    font-size: 16px;
+  }
 
-.popup p{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(32, 196, 32);
-}
+  h1 img {
+    min-width: 90px;
+    max-width: 100px;
+  }
 
+  header div img {
+    min-width: 50px;
+    max-width: 80px;
+  }
 
-.popup:hover{
-  width:300px;
-  height:400px;
-  background-color: white;
-  display: block;
-  margin-top: 16px;
+  header a p {
+    font-size: 16px;
+  }
 }
 
 
 /* hero */
-.hero{
+.hero {
   height: 450px;
   text-align: center;
   padding: 40px 0;
@@ -117,184 +119,250 @@ header img{
   color: white;
 }
 
-.hero p{
+.hero p {
   font-size: 16px;
   margin: 0;
   padding: 8px 0;
   color: white;
- }
+}
 
- .hero .container div{
+.hero .container div {
   border-radius: 4px;
   background-color: #a8ada1cf;
- }
+}
 
- .hero div+p{
+.hero div+p {
   border-radius: 4px;
   background-color: #a8ada1cf;
   margin: 150px 0 0;
- }
+}
 
- .hero h3{
+.hero h3 {
   padding: 8px 0 0;
   margin: 56px 0 0;
- }
-
- /* shoshin */
- .shoshin{
-  padding: 32px 0;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
- }
-
- .shoshin h3{
-color: rgb(32, 196, 32); 
 }
 
-.reserve{
-  font-size: 18px;
-  font-weight: bold;
+@media(min-width: 600px) {
+  .hero div {
+    width: 800px;
+  }
 }
 
-.shoshin p+p{
-  margin: 8px 0 0;
-}
-.shoshin a{
-  font-size: 24px;
-  line-height: 2.5;
-  color: red;
-  font-weight: bold;
-}
-
-.shoshin img{
-  margin-bottom: 8px;
-}
-
-/* jikan */
-.jikan{
-  background-color: rgba(0, 128, 0, 0.447);
-  margin: 32px auto;
-  /* border: green solid 3px; */
-  border-radius: 16px;
-  padding: 32px;
-  
-}
-
-
-.jikan div{
-  text-align: center;
-}
-
-.jikan table{
-  margin: 8px auto;
-  border-collapse: collapse;
-  
-}
-
-
-.jikan th{
-  padding: 8px;
-  border: 3px solid #444;
-}
-
-.jikan td{
-  padding: 8px 12px;
-  border: 3px solid #444;
-}
-
-.jikan h3{
-  color:white;
-}
-
-.jikan h4{
-  font-size: 20px;
-  margin: 32px 0 0 ;
-}
-
-.jikan h4 + p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.jikan ul{
-  margin: 32px 0 0;
-}
-.jikan li{
-  margin: 8px 0 0 ;
-}
-
-/* map */
-.map{
-  margin-bottom: 32px;
-  text-align: center;
-}
-.map h3{
-  text-align: center;
-  color: rgb(32, 196, 32); 
+  /* shoshin */
+  .shoshin {
+    padding: 32px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
   }
 
-  .map img{
+  .shoshin h3 {
+    color: rgb(32, 196, 32);
+  }
+
+  .reserve {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .shoshin p+p {
+    margin: 8px 0 0;
+  }
+
+  .shoshin a {
+    font-size: 24px;
+    line-height: 2.5;
+    color: red;
+    font-weight: bold;
+  }
+
+  .shoshin img {
+    margin-bottom: 8px;
+  }
+
+  /* jikan */
+  .jikan {
+    background-color: rgba(0, 128, 0, 0.447);
+    margin: 32px auto;
+    /* border: green solid 3px; */
+    border-radius: 16px;
+    padding: 32px;
+
+  }
+
+
+  .jikan div {
+    text-align: center;
+  }
+
+  .jikan table {
+    margin: 8px auto;
+    border-collapse: collapse;
+
+  }
+
+
+  .jikan th {
+    padding: 8px;
+    border: 3px solid #444;
+  }
+
+  .jikan td {
+    padding: 8px 12px;
+    border: 3px solid #444;
+  }
+
+  .jikan h3 {
+    color: white;
+  }
+
+  .jikan h4 {
+    font-size: 20px;
+    margin: 32px 0 0;
+  }
+
+  .jikan h4+p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .jikan ul {
+    margin: 32px 0 0;
+  }
+
+  .jikan li {
+    margin: 8px 0 0;
+  }
+
+
+
+  /* map */
+  .map {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .map h3 {
+    text-align: center;
+    color: rgb(32, 196, 32);
+  }
+
+  .map img {
     margin-top: 16px;
   }
 
-  .map h4{
+  .map h4 {
     text-align: center;
     margin-top: 16px;
     font-size: 20px;
   }
 
-.jusyo{
-  margin-top: 16px;
-}
 
-.map img + p{
-  margin-top: 8px;
-font-size: 14px;
-color: green;
-}
 
-/* menu */
+  .jusyo {
+    margin-top: 16px;
+  }
 
-.tabu{
-  background-color: orange;
-  color: white;
-  position: fixed;
-  bottom: 0;
-}
-.menu{
-  width: 100%;
-  display: flex;
-  text-align: center;
-}
+  .map img+p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: green;
+  }
 
-.menu a{
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-   line-height: 64px;
-   border: 1px white solid;
-   flex: 1;
-}
+  @media(min-width: 600px) {
+    .map {
+      margin-top: 64px;
+    }
+  }
 
-.menu a:hover{
-  opacity: .7;
-}
-.kuruma{
- padding: 16px 32px;
- }
+  @media(min-width: 600px) {
+    .yoko {
+      display: flex;
+      width: calc(100% - 128px);
+      margin: 0 auto;
+    }
+  }
 
- .kuruma p{
-  font-size: 12px;
- }
-  
- footer{
-  text-align: center;
-  background-color: #555;
-  color: white;
-  padding: 16px 0 200px;
- }
+  /* menu */
+
+  .tabu {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    line-height: 64px;
+    border: 1px white solid;
+    flex: 1;
+  }
+
+  .menu a:hover {
+    opacity: .7;
+  }
+
+  .kuruma {
+    padding: 16px 32px;
+  }
+
+  .kuruma p {
+    font-size: 12px;
+  }
+
+  @media(min-width: 600px){
+   .tabu{
+    background-color: #555;
+    position: static;
+    margin: 0 auto;
+   }
+
+   .menu{
+    justify-content: center;
+   }
+
+    .menu a{
+      border-bottom: none;
+      width: 200px;
+      flex: initial;
+      font-size: 22px;
+    }
+
+    .kuruma p{
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .kuruma h4{
+      margin-top: 16px;
+      text-align: center;
+      font-size: 24px;
+  }
+  }
+
+  footer {
+    text-align: center;
+    background-color: #555;
+    color: white;
+    padding: 16px 0 200px;
+  }
+
+  @media(min-width: 600px){
+    footer{
+      padding-bottom: 64px;
+  }
+}

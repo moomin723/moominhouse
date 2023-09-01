@@ -33,6 +33,12 @@ h3{
   font-size: 24px;
 }
 
+@media(min-width: 600px) {
+  .container {
+    width: calc(100% - 128px);
+    max-width: 1000px;
+  }
+}
 
 /* header */
 
@@ -74,42 +80,35 @@ header img{
 .access{
   margin-left: auto;
 }
+@media(min-width: 600px) {
+  header h2 {
+    font-size: 2.5vw;
+  }
 
-/* popup */
+  .h2 p {
+    font-size: 16px;
+  }
 
-.popup{
-  box-sizing: border-box;
-  padding: 32px 0 24px;
-  width:40px;
-  height:40px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  top: 32px;
-  right: 20px;
-  border-radius: 16px;
-  text-align: center;
-  overflow: hidden;
+  h1 img {
+    min-width: 90px;
+    max-width: 100px;
+  }
+
+  header div img {
+    min-width: 50px;
+    max-width: 80px;
+  }
+
+  header a p {
+    font-size: 16px;
+  }
 }
 
-.popup p{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(32, 196, 32);
-}
-
-
-.popup:hover{
-  width:300px;
-  height:400px;
-  background-color: white;
-  display: block;
-  margin-top: 16px;
-}
 
 /* map */
 .map{
-  margin-bottom: 32px;
+  margin-top: 64px;
+  margin-bottom: 80px;
   text-align: center;
 }
 .map h3{
@@ -136,9 +135,25 @@ header img{
 font-size: 14px;
 color: green;
 }
+@media(min-width: 600px) {
+  .map{
+    max-width: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .map img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
 /* menu */
 
 .tabu{
+  width: 100%;
   background-color: orange;
   color: white;
   position: fixed;
@@ -169,10 +184,45 @@ color: green;
  .kuruma p{
   font-size: 12px;
  }
-  
- footer{
-  text-align: center;
-  background-color: #555;
-  color: white;
-  padding: 16px 0 200px;
+ @media(min-width: 600px){
+  .tabu{
+   background-color: #555;
+   position: static;
+   margin: 0 auto;
+  }
+
+  .menu{
+   justify-content: center;
+  }
+
+   .menu a{
+     border-bottom: none;
+     width: 200px;
+     flex: initial;
+     font-size: 22px;
+   }
+
+   .kuruma p{
+     text-align: center;
+     font-size: 20px;
+   }
+
+   .kuruma h4{
+     margin-top: 16px;
+     text-align: center;
+     font-size: 24px;
  }
+ }
+
+ footer {
+   text-align: center;
+   background-color: #555;
+   color: white;
+   padding: 16px 0 200px;
+ }
+
+ @media(min-width: 600px){
+   footer{
+     padding-bottom: 64px;
+ }
+}

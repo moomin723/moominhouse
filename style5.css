@@ -33,6 +33,13 @@ h3{
   font-size: 24px;
 }
 
+@media(min-width: 600px) {
+  .container {
+    width: calc(100% - 128px);
+    max-width: 1000px;
+  }
+}
+
 
 /* header */
 
@@ -75,37 +82,32 @@ header img{
   margin-left: auto;
 }
 
-/* popup */
+@media(min-width: 600px) {
+  header h2 {
+    font-size: 2.5vw;
+  }
 
-.popup{
-  box-sizing: border-box;
-  padding: 32px 0 24px;
-  width:40px;
-  height:40px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  top: 32px;
-  right: 20px;
-  border-radius: 16px;
-  text-align: center;
-  overflow: hidden;
+  .h2 p {
+    font-size: 16px;
+  }
+
+  h1 img {
+    min-width: 90px;
+    max-width: 100px;
+  }
+
+  header div img {
+    min-width: 50px;
+    max-width: 80px;
+  }
+
+  header a p {
+    font-size: 16px;
+  }
 }
 
-.popup p{
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(32, 196, 32);
-}
 
 
-.popup:hover{
-  width:300px;
-  height:400px;
-  background-color: white;
-  display: block;
-  margin-top: 16px;
-}
 /* staff */
 .color{
   padding: 32px 0;
@@ -191,15 +193,53 @@ header img{
   border-top: white 2px solid;
 }
 
+@media(min-width: 600px){
+  .staff section{
+    display: block;
+  }
+
+  .color{
+    background-color: rgba(230, 254, 153, 0.299);
+    padding: 64px 0;
+  }
+
+  .yoko{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 32px;
+  }
+
+  .yoko section{
+    flex: 1;
+  }
+
+  .staff p{
+    font-size: 18px;
+  }
+
+  .staff h4{
+    font-size: 24px;
+  }
+
+  .shinri div{
+    justify-content: center;
+    display: flex;
+  }
+}
+
 
 /* menu */
 
 .tabu{
+  width: 100%;
   background-color: orange;
   color: white;
   position: fixed;
   bottom: 0;
 }
+
 .menu{
   width: 100%;
   display: flex;
@@ -218,6 +258,7 @@ header img{
 .menu a:hover{
   opacity: .7;
 }
+
 .kuruma{
  padding: 16px 32px;
  }
@@ -225,10 +266,46 @@ header img{
  .kuruma p{
   font-size: 12px;
  }
-  
- footer{
-  text-align: center;
-  background-color: #555;
-  color: white;
-  padding: 16px 0 200px;
+
+ @media(min-width: 600px){
+  .tabu{
+   background-color: #555;
+   position: static;
+   margin: 0 auto;
+  }
+
+  .menu{
+   justify-content: center;
+  }
+
+   .menu a{
+     border-bottom: none;
+     width: 200px;
+     flex: initial;
+     font-size: 22px;
+   }
+
+   .kuruma p{
+     text-align: center;
+     font-size: 20px;
+   }
+
+   .kuruma h4{
+     margin-top: 16px;
+     text-align: center;
+     font-size: 24px;
  }
+ }
+
+ footer {
+   text-align: center;
+   background-color: #555;
+   color: white;
+   padding: 16px 0 200px;
+ }
+
+ @media(min-width: 600px){
+   footer{
+     padding-bottom: 64px;
+ }
+}
