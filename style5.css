@@ -229,6 +229,33 @@ header img{
   }
 }
 
+/* hyou */
+
+.jikan table {
+  margin: 8px auto 32px;
+  border-collapse: collapse;
+}
+
+.jikan th {
+  padding: 8px;
+  border: 3px solid #444;
+}
+
+.jikan td {
+  padding: 8px 12px;
+  border: 3px solid #444;
+}
+
+.jikan h4 {
+  text-align: center;
+  font-size: 20px;
+  margin: 32px 0 0;
+}
+
+table td.border{
+  background-image: linear-gradient(to right top, transparent calc(50% - 0.5px), #444 50%, #444 calc(50% + 0.5px), transparent calc(50% + 1px));
+}
+
 
 /* menu */
 

@@ -142,6 +142,10 @@ color: rgb(32, 196, 32);
   margin-bottom: 8px;
 }
 
+#ima{
+  font-weight: bold;
+}
+
 
 
 @media(min-width: 600px) {

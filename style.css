@@ -148,6 +148,129 @@ header img {
   }
 }
 
+/* news */
+.news{
+  margin-top: 32px;
+  padding: 8px 8px 16px;
+  border: rgba(0, 128, 0, 0.447) solid 5px;
+  border-radius: 16px;
+}
+.new{
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+  justify-content: center;
+}
+
+
+.news h3{
+  width: 200px;
+  margin: 8px auto 16px;
+   color: green;
+    text-align: center;
+    border-bottom: rgba(0, 128, 0, 0.447) 1px solid;
+}
+
+.ne{
+  display: none;
+}
+
+@media(min-width: 600px) {
+  .new{
+    width: 600px;
+    margin: 4px auto ;
+    justify-content:flex-start;
+  }
+
+  .ne{
+    display: block;
+  }
+}
+
+/* biru */
+.biru{
+padding: 0 32px 32px;
+}
+
+.biru h3{
+  text-align: center;
+  color: green;
+}
+
+.biru p{
+  margin-top: 16px;
+}
+
+#mitei{
+  text-align: center;
+  line-height: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+@media(min-width: 600px) {
+  .biru p{
+    width: 650px;
+    margin: 16px auto 0;
+  }
+
+  .biru{
+    padding: 0 0 60px;
+  }
+}
+
+/* yasumi */
+
+
+.yasumi h3{
+  text-align: center;
+  color: green;
+}
+
+
+#yasumi{
+  width: 275px;
+  margin: 16px auto;
+}
+
+.yasumi p{
+  margin-top: 8px;
+}
+.youbi table {
+  margin: 8px auto 32px;
+  border-collapse: collapse;
+}
+
+.youbi th {
+  padding: 8px;
+  border: 3px solid #444;
+}
+
+.youbi td {
+  padding: 8px 12px;
+  border: 3px solid #444;
+}
+
+.youbi h4 {
+  text-align: center;
+  font-size: 20px;
+  margin: 32px 0 0;
+}
+
+table td.border{
+  background-image: linear-gradient(to right top, transparent calc(50% - 0.5px), #444 50%, #444 calc(50% + 0.5px), transparent calc(50% + 1px));
+}
+
+@media(min-width: 600px) {
+  .yasumi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+
   /* shoshin */
   .shoshin {
     padding: 32px 0;
@@ -182,6 +305,10 @@ header img {
 
   .shoshin img {
     margin-bottom: 8px;
+  }
+
+  #ima{
+    font-weight: bold;
   }
 
   /* jikan */
